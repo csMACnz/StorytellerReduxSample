@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Recipe to Connect Storyteller to Redux Applications</Description>
+    <AssemblyTitle>Storyteller.Redux</AssemblyTitle>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <VersionPrefix>0.2.0-alpha</VersionPrefix>
+    <Authors>Jeremy D. Miller</Authors>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>Storyteller.Redux</AssemblyName>
+    <PackageId>Storyteller.Redux</PackageId>
+    <PackageTags>testing;storyteller;specifications;bdd;atdd;aspnetcore;redux</PackageTags>
+    <PackageIconUrl>http://storyteller.github.io/storyteller/content/images/favicon.ico</PackageIconUrl>
+    <PackageProjectUrl>http://storyteller.github.io</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/storyteller/storyteller/raw/master/LICENSE.TXT</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>git://github.com/storyteller/storyteller</RepositoryUrl>
+    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions">
+      <Version>1.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel">
+      <Version>1.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.WebSockets.Server" Version="0.1.0" />
+    <PackageReference Include="Storyteller" Version="4.3.2" />
+  </ItemGroup>
+</Project>

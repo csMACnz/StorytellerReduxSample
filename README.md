@@ -14,3 +14,5 @@ https://jeremydmiller.com/2017/12/19/subcutaneous-testing-against-react-net-appl
 * added force send current state functionality to Storyteller.Redux (after initial connection)
 * Added tests to increment the counter
 * Works!
+
+A more detailed description of how I made this work is on my blog: [Subcutaneous Testing against React + .Net Applications with Storyteller - A Reply](https://blog.csmac.nz/storytellerreduxsample/)

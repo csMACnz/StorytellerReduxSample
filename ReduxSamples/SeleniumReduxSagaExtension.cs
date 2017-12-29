@@ -10,7 +10,7 @@ namespace ReduxSamples
     {
         public string Url { get; }
 
-        private Lazy<BrowserDriver> _phantomDriver = new Lazy<BrowserDriver>(() => new BrowserDriver());
+        private Lazy<BrowserDriver> _browserDriver = new Lazy<BrowserDriver>(() => new BrowserDriver());
 
         public SeleniumReduxSagaExtension(string url)
         {
@@ -24,7 +24,7 @@ namespace ReduxSamples
         {
             Server.SendCloseMessage();
             Server.Dispose();
-            _phantomDriver.Value.Dispose();
+            _browserDriver.Value.Dispose();
         }
 
         public Task Start()
@@ -40,7 +40,7 @@ namespace ReduxSamples
             var url = Url.Contains("?")
                 ? Url + $"&StorytellerPort={Server.Port}"
                 : $"{Url}?StorytellerPort={Server.Port}";
-            _phantomDriver.Value.LaunchUrl(url);
+            _browserDriver.Value.LaunchUrl(url);
         }
 
         public void BeforeEach(ISpecContext context)
